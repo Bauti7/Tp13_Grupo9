@@ -1,5 +1,5 @@
 
-
+package tp13_grupo9;
 
 import java.sql.*;
 import java.sql.Connection;
@@ -25,18 +25,18 @@ public class Tp13_Grupo9 {
             
             Connection con = DriverManager.getConnection(URL,usuario,password);
             
-            // -------- Dar de alta un alumno. ------------ 
+            // -------- INSERTAR ALUMNO ------------ 
             
 //            String sql = "INSERT INTO alumno (dni,apellido,nombre, fechaDeNacimiento, estado)"
 //                    
-//                    + "VALUES (4412381, 'Gómez', 'Gastón', '1999-02-21', true)";
+//                    + "VALUES (44122381, 'Gómez', 'Gastón', '1999-02-21', true)";
 //           
             
-            // -------- Dar de alta una materia. --------------
+            // -------- INSERTAR MATERIA --------------
 
 //            String sql2 = "INSERT INTO materia (nombre, año, estado)"
 //                    
-//                    + "VALUES ('Programación 2', 2, true)";
+//                    + "VALUES ('hola', 2, true)";
 //            
 //            PreparedStatement ps = con.prepareStatement(sql2);
 //           
@@ -48,7 +48,7 @@ public class Tp13_Grupo9 {
 //                
 //            }
 
-            /// -------- Obtener los datos de los alumnos activos. ------------
+            /// -------- OBTENER ALUMNOS ACTIVOS. ------------
             
 //            String sql = "SELECT * FROM alumno WHERE estado = true";
 //            
@@ -77,7 +77,7 @@ public class Tp13_Grupo9 {
 //            
 //            con.close();
 
-            /// --------- Inscribir alumno -----------
+            /// --------- INSCRIBIR ALUMNO -----------
             
 //               String sql3 = "INSERT INTO inscripcion(nota, idAlumno, idMateria)"
 //                       
@@ -93,7 +93,7 @@ public class Tp13_Grupo9 {
 //               
 //               }
 
-            /// -------- Mostrar Notas mayores a 8 --------
+            /// -------- MOSTRAR NOTAS MAYORES A 8 --------
             
                 //Distinct para que no se repita filas con el mismo alumno en este caso
 
@@ -131,7 +131,7 @@ public class Tp13_Grupo9 {
 //                 
 //                 con.close();
 
-                    /// --------- Desinscribir un alumno de una de las materias ------
+                    /// --------- DESINSCRIBIR ALUMNO DE UNA MATERIA ------
                     
 //                    String sql5 = "DELETE FROM inscripcion WHERE idAlumno = 7 AND idMateria = 3";
 //                    
